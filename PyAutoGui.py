@@ -5,6 +5,7 @@ import time
 print("Введите ip адрес")
 a = input()
 #открываем
+time.sleep(2)
 pyautogui.hotkey('win', 'r')  # открываем "Выполнить"
 pyautogui.typewrite('C:\Program Files (x86)\ABAK PLC Configurator\AbakConfigurator.exe')
 pyautogui.press('enter')
@@ -27,7 +28,7 @@ pyautogui.moveTo(384,78)
 time.sleep(1)
 pyautogui.moveTo(880, 78)
 pyautogui.click(880,78)
-time.sleep(1)
+time.sleep(2)
 pyautogui.click(795, 198)
 time.sleep(2)
 pyautogui.click(1075, 277)
@@ -37,10 +38,10 @@ pyautogui.press('backspace')
 for i in a:
     pyautogui.press(i)
 
+pyautogui.click(1076, 650)
 pyautogui.click(720, 155)
-pyautogui.click(1096, 667)
+time.sleep(10)
+pyautogui.click(1040, 613)
 time.sleep(15)
-pyautogui.click(1120, 674)
+pyautogui.click(1067, 612)
 pyautogui.click(1287, 113)
-
-
